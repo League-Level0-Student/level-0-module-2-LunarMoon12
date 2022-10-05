@@ -27,12 +27,10 @@ public class SafeCracker {
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */
-		String answer = JOptionPane.showInputDialog("What's the code to the safe?");
-        if (answer.equals("9999999"))
-        		JOptionPane.showMessageDialog(null, "Congratulations you unlocked the safe!");
-	if (answer.equals("wekncr))
+		for (int i = 0; i<9999999; i++) { 
+		tryCode(i);
+		}
 	}
-
 	
 
 	void tryCode(int guess) {
